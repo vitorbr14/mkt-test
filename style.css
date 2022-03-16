@@ -1,0 +1,294 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.navbar ul {
+    font-size: 16px;
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-weight: 400;
+}
+.navbar li a {
+    margin-left: 45px;
+    text-decoration: none;
+    color: #1B2755;
+}
+/* BANNER */
+.banner {
+    background-image: url(imagens/banner-home.png);
+    background-size: cover;
+    height: 85vh;
+   /* height: 800px;
+    */
+    display: flex;
+    align-items: center;
+}
+.banner__txt {
+    width: 40%;
+}
+.banner__txt h1 {
+    font-size: min(60px,5vh);
+   /* font-size: 60px;
+    */
+    color: #fff;
+    font-weight: bold;
+}
+.banner__txt p {
+    color: #fff;
+    font-size: min(22px,3vh);
+}
+.banner__txt span {
+    font-weight: bold;
+}
+.banner__txt {}
+.btn-main {
+    border: none;
+    color: #fff;
+    background-color: #15BFF1;
+    padding: 12px 50px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+/* BANNER */
+/* OBJETIVOS */
+.titulos {
+    padding: 100px 0px;
+    text-align: center;
+    width: 55%;
+    margin: auto;
+}
+.titulos h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #15BFF1;
+}
+.titulos p {
+    font-size: 22px;
+    color: #4B4B4B;
+}
+.servicosCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 398px);
+    justify-content: center;
+    grid-gap: 20px;
+    padding-bottom: 150px;
+}
+.servicosCards__single {
+    padding: 0px 80px;
+    border: 3px solid #15BFF1;
+    border-radius: 15%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 400px;
+}
+.servicosCards__single h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1B2755;
+}
+.servicosCards__single p {
+    font-size: 16px;
+    color: #929292;
+}
+.servicosCards__single img {
+    padding-bottom: 20px;
+}
+/* OBJETIVOS */
+
+
+
+
+/* CASES */
+.cases {
+        
+    background-image: url(imagens/fundo-cases.png);
+    background-size: cover;
+    /* height: 650px; */
+    padding: 190px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.txtCases {
+  
+}
+.txtCases h1 {
+font-size: min(40px, 7vh);
+text-transform: uppercase;
+font-weight: 600;
+color: #1B2755;
+}
+.txtCases p {
+    font-size: min(20px, 4vh);
+    
+    font-weight: 500;
+    color: #fff;
+    
+    }
+
+ .btn-cases {
+    border: none;
+    background-color: #1B2755;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 30px;
+} 
+.casesInfo {
+display: flex;
+justify-content: space-around;
+align-items: center;
+color: #1B2755;
+
+}
+
+.casesInfo__txt h1 {
+text-align: center;
+font-size: 100px;
+font-weight: bold;
+}
+.casesInfo__txt {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    }
+
+.casesInfo img {
+    width: 285px!important;
+    min-width: 100%;
+    padding-top: 25px;
+    margin-right: 5px;
+}
+
+
+/* CASES */
+
+
+/* O QUE NOSSOS CLIENTES FALAM */
+
+.nossos-clientesFalam {
+    padding: 150px 0px;
+    background-image: url(imagens/clientesDizem_fundo.png);
+    background-repeat: no-repeat;
+    background-position: 4% 26%
+}
+.nossos-clientesFalam-wrapper {
+    display: flex;
+}
+
+.nossos-clientesFalam__txt { 
+    width: 30%;
+}
+.nossos-clientesFalam__txt h1 {
+color: #15BFF1;
+font-size: 70px;
+font-weight: 600;
+}
+.nossos-clientesFalam__txt p {
+    color: #707070;
+    font-size: 22px;
+}
+.cardsClientes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* display: grid;
+     grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 20px; */
+}
+.cardsClientes__single {
+    background-color: #929292;
+    height: 450px;
+    width: 260px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-left: 40px;
+    
+    
+}
+.txt-client {
+    padding-top: 20px;
+   position: absolute;
+   width: 100%;
+   top: 100%;
+   text-align: center;
+}
+.txt-client p {
+    font-size: 24px;
+    font-weight: 700;
+    color: #15BFF1;
+    margin: 0px;
+}
+.txt-client span {
+    color: #929292;
+    font-size: 16px;
+}
+
+.btn-orcamento {
+    background-color: #ED1164;
+}
+.cardsClientes__single img {
+    /* width: 260px;
+    height: 450px;
+    max-width: 100%; */
+}
+/* O QUE NOSSOS CLIENTES FALAM */
+
+@media (max-width: 1366px) {
+    .servicosCards {
+        grid-template-columns: repeat(auto-fit, 300px);
+   }
+    .servicosCards__single {
+        padding: 10px;
+        
+   }
+   .cardsClientes__single {
+    margin: 50px 0px;
+   }
+   .nossos-clientesFalam-wrapper {
+    flex-direction: column;
+    justify-content: center;
+}
+.nossos-clientesFalam__txt {
+    width: 100%;
+    text-align: center;
+}
+}
+@media (max-width: 991px) {
+    .header {
+        justify-content: center;
+   }
+    .navbar ul {
+        display: none;
+   }
+    .banner__txt {
+        text-align: center;
+        width: 100%;
+   }
+    .titulos {
+        width: 100%;
+   }
+    .txtCases {
+        text-align: center;
+        padding-bottom: 100px;
+   }
+    .casesInfo {
+        flex-direction: column!important;
+   }
+}
