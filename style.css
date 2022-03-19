@@ -4,6 +4,27 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+.underline::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: #15BFF1;
+    display: block;
+    transition: .5s ease-in-out;
+
+
+  }
+  .underline:hover::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: #15BFF1;
+    display: block;
+  }
+
+  .uppercase {
+      text-transform: uppercase;
+  }
 .header {
     display: flex;
     justify-content: space-between;
@@ -19,8 +40,11 @@ body {
     margin-top: 10px;
     font-weight: 400;
 }
+.navbar li {
+    padding-left: 50px;
+}
 .navbar li a {
-    margin-left: 45px;
+    
     text-decoration: none;
     color: #1B2755;
 }
@@ -86,7 +110,7 @@ body {
 }
 .servicosCards__single {
     padding: 0px 80px;
-    border: 3px solid #15BFF1;
+    border: 1px solid #15BFF1;
     border-radius: 15%;
     display: flex;
     align-items: center;
@@ -180,7 +204,7 @@ font-weight: bold;
 /* O QUE NOSSOS CLIENTES FALAM */
 
 .nossos-clientesFalam {
-    padding: 550px 0px;
+    padding: 150px 0px;
     background-image: url(imagens/clientesDizem_fundo.png);
     background-repeat: no-repeat;
     background-position: 4% 26%
@@ -255,7 +279,7 @@ font-weight: 600;
 .quemSomos{
     background-size: cover;
     height: 80vh;
-    background-image: url(/imagens/Grupo\ 565.png);
+    background-image: url(imagens/Grupo\ 565.png);
     background-position: 100% 100%;
     background-size: 100%;
     display: flex;
@@ -273,12 +297,34 @@ font-weight: 600;
     color: #fff;
     font-size: 22px;
 }
+.quemSomos__video video {
+    width: 100%;
+}
 /* QUEM SOMOS */
 
+/* CLIENTES */
+.clientes {
+    margin-bottom: 350px;
+
+}
+.clientes__logos {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.clientes__logos img {
+    width: 270px;
+}
+/* CLIENTES */
 
 
 /* VAMOS JUNTOS ALCANÇAR SEUS OBJETIVOS? */
 .atingirObjetivos {
+ 
 position: relative;
 padding-top: 300px;
 padding-bottom: 150px;
@@ -340,6 +386,12 @@ background-color: #1B2755;
     border: 1px solid #fff;
     max-width: 100%;
     background-color: transparent;
+    transition: 0.5s;
+}
+
+.btn-card:hover{
+    color: #15BFF1;
+    background-color: #fff;
 }
 .atingirObjetivos__txt {
    
@@ -410,21 +462,21 @@ color: #fff;
 /* INSIGHTS */
 /* FOOTER */
 .footer {
-    display: none;
+    
     background-color: #15BFF1;
 }
 .footer__high {
     display: flex;
     justify-content: space-between;
-    margin: 100px 0px;
     padding: 50px 0px;
-    border-bottom: 3px solid #1B2755;
+    border-bottom: 1px solid #1B2755;
     
 }
 .footer__down {
     display: flex;
     justify-content: space-between;
     padding-bottom: 50px;
+    padding-top: 60px;
   
     
 }
@@ -442,7 +494,7 @@ color: #fff;
     width: 50px;
 }
 .footer__infos p {
-    font-size: 20px;
+    font-size: 16px;
     margin: 0px;
 }
 .sobre {
@@ -496,7 +548,7 @@ color: #fff;
         
    }
    .cardsClientes__single {
-    margin: 50px 0px;
+    margin: 70px auto;
    }
    .nossos-clientesFalam-wrapper {
     flex-direction: column;
@@ -544,9 +596,45 @@ color: #fff;
       margin-bottom: 20px;
       margin: 10px auto;
   }
+  .footer__high .logo {
+      padding-bottom: 50px;
+  }
+  .footer__high {
+    flex-direction: column;
+    
+}
+
+.footer__infos {
+    padding-bottom: 50px;
+}
+.footer__down {
+    flex-direction: column;
+    
+}
+iframe {
+    width: 100%;
+}
+
+
   }
   @media (max-width: 767px) { 
     .insights__cards {
         width: 90%;
   }
+  .clientes__logos {
+   
+    justify-content: center;
+    flex-direction: column;
+    
+  
+    
 }
+.atingirObjetivos__txt {
+    padding: 100px 0px;
+    width: 100%;
+    text-align: center;
+}
+.clientes__logos img {
+    margin-bottom:50px;
+}
+  }
