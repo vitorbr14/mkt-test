@@ -180,7 +180,7 @@ font-weight: bold;
 /* O QUE NOSSOS CLIENTES FALAM */
 
 .nossos-clientesFalam {
-    padding: 150px 0px;
+    padding: 550px 0px;
     background-image: url(imagens/clientesDizem_fundo.png);
     background-repeat: no-repeat;
     background-position: 4% 26%
@@ -250,6 +250,243 @@ font-weight: 600;
 }
 /* O QUE NOSSOS CLIENTES FALAM */
 
+
+/* QUEM SOMOS */
+.quemSomos{
+    background-size: cover;
+    height: 80vh;
+    background-image: url(/imagens/Grupo\ 565.png);
+    background-position: 100% 100%;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+}
+.quemSomos__txt { 
+    width: 70%;
+}
+.quemSomos__txt h1 {
+color: #1B2755;
+font-size: 70px;
+font-weight: 600;
+}
+.quemSomos__txt p {
+    color: #fff;
+    font-size: 22px;
+}
+/* QUEM SOMOS */
+
+
+
+/* VAMOS JUNTOS ALCANÇAR SEUS OBJETIVOS? */
+.atingirObjetivos {
+position: relative;
+padding-top: 300px;
+padding-bottom: 150px;
+background-color: #1B2755;
+}
+.insights {
+    
+}
+.insights {
+    
+    position: absolute;
+    width: 100%;
+    top: -23%;
+}
+.insights__wrapper {
+  display: flex;
+  justify-content: center;
+
+}
+.insights__cards {
+    height: 400px;
+    width: 530px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+    background-size: cover;
+    position: relative;
+    margin-left: 15px;
+    padding: 50px;
+    
+}
+.insights__cards::before {
+    content: '';
+    border-radius: 15%;
+    background-color: #15BFF1;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    opacity: 0.8;
+    width: 100%;
+
+}
+.insights__cards__txt {
+    text-align: center;
+    z-index: 999;
+    
+}
+.insights__cards__txt h1 {
+    font-size: 30px;
+    
+    
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+.insights__cards__txt .btn-card {
+    border: 1px solid #fff;
+    max-width: 100%;
+    background-color: transparent;
+}
+.atingirObjetivos__txt {
+   
+    width: 90%;
+}
+
+.atingirObjetivos__txt h1 {
+font-size: 40px;
+font-weight: bold;
+color: #15BFF1;
+}
+
+.atingirObjetivos__txt p {
+font-size: 22px;
+font-weight: 500;
+color: #fff;
+}
+.atingirObjetivos__txt span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.formularioContato input {
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 15px;
+    border-color: #00A4E5;
+    margin-bottom: 15px;
+    outline: red;
+}
+.formularioContato input[type=text]:focus{
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+  }
+.formularioContato input::placeholder {
+    color: #00A4E5;
+    font-size: 12px;
+
+}
+
+.formularioContato textarea::placeholder {
+    color: #00A4E5;
+    font-size: 12px;
+
+}
+
+
+.formularioContato textarea {
+    color: #00A4E5;
+    background-color: transparent;
+   padding: 10px;
+   border-radius: 15px;
+   border-color: #00A4E5;
+}
+
+.btn-submit {
+    background-color: #00A4E5;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+/* VAMOS JUNTOS ALCANÇAR SEUS OBJETIVOS? */
+
+/* INSIGHTS */
+
+/* INSIGHTS */
+/* FOOTER */
+.footer {
+    display: none;
+    background-color: #15BFF1;
+}
+.footer__high {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0px;
+    padding: 50px 0px;
+    border-bottom: 3px solid #1B2755;
+    
+}
+.footer__down {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  
+    
+}
+.footer__infos {
+    display: flex;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    align-items: center;
+    
+}
+.footer__infos img {
+    align-self: center;
+    padding-right: 10px;
+    width: 50px;
+}
+.footer__infos p {
+    font-size: 20px;
+    margin: 0px;
+}
+.sobre {
+    width: 30%;
+}
+.footer__txt {
+    margin-right: 20px;
+    font-weight: 500;
+}
+.footer__txt h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1B2755;
+}
+.footer__txt p {
+    font-size: 16px;
+    color: #fff;
+}
+.footer__txt ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.footer__txt li a {
+    font-size: 16px;
+    color: #fff;
+
+}
+.footer__txt a {
+   text-decoration: none;
+
+}
+.mapa {
+    
+}
+
+
+
+/* FOOTER */
+
+
+
+
+
 @media (max-width: 1366px) {
     .servicosCards {
         grid-template-columns: repeat(auto-fit, 300px);
@@ -268,6 +505,9 @@ font-weight: 600;
 .nossos-clientesFalam__txt {
     width: 100%;
     text-align: center;
+}
+.insights__cards {
+    width: 400px;
 }
 }
 @media (max-width: 991px) {
@@ -290,5 +530,23 @@ font-weight: 600;
    }
     .casesInfo {
         flex-direction: column!important;
+   }.insights__wrapper {
+    flex-direction: column;
    }
+   .insights {
+    
+    position: relative;
+  }
+  .insights__cards {
+      width: 50%;
+      text-align: center;
+      margin-left: 0px;
+      margin-bottom: 20px;
+      margin: 10px auto;
+  }
+  }
+  @media (max-width: 767px) { 
+    .insights__cards {
+        width: 90%;
+  }
 }
